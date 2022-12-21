@@ -19,8 +19,7 @@ function gaussQuad(f, a, b)
 end
 
 # Integral operator
-function integral(f, a, b)
-    n = 10^3
+function integral(f, a, b, n)
     dx = (b - a) / n
     return sum([gaussQuad(f, a + i * dx, a + (i + 1) * dx) for i = 0:n-1])
 end
@@ -47,7 +46,7 @@ function solve(n)
 
     #= Define map ϕ:F×F⟶ℜ which takes a family of functions f = {f₁,f₂, ...},
     where fᵢ ∈ F, indices i and j and returns ∫ₐᵇ E(x)fᵢfⱼ dx .=#
-    ϕ = (f, i, j) -> integral(x -> E(x) * f(i, x) * f(j, x), a, b)
+    ϕ = (f, i, j) -> integral(x -> E(x) * f(i, x) * f(j, x), a, b, n)
 
     # Define delta function δ:N×N⟶{0,1} as 1 if i=j or i-j=±1 | 0 otherwise
     δ = (i, j) -> i == j || abs(i - j) == 1
@@ -67,6 +66,7 @@ end
 function IO()
     print(">> Input number of elements: ")
     n = parse(Int64, readline())
+    n = n % 2 == 0 ? n : n + 1
 
     u, x = solve(n), range(0, 2, 100)
     plt = plot(x, u.(x),
