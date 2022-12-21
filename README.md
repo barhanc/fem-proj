@@ -1,6 +1,5 @@
-## Rozwiązanie numeryczne równania różniczkowe przy wykorzystaniu MES
-### Bartosz Hanc | AGH UST 2022/23
-
+## Rozwiązanie numeryczne równania różniczkowe przy wykorzystaniu MES | Bartosz Hanc | AGH UST 2022/23
+### Opis programu
 Repozytorium zawiera plik PDF zawierający sformułowanie danego problemu brzegowego wraz z przekształceniem go do postaci słabej
 oraz jego dyskretyzację wykorzystaną w algorytmie numerycznym napisanym w języku Julia. Algorytm numeryczny wykorzystuje całkowanie
 numeryczne metodą kwadratur Gaussa-Legendre'a oraz natywnie zaimplementowane w Julii wydajne operacje na macierzach.
