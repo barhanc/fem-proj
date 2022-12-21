@@ -27,8 +27,8 @@ end
 
 #= Main solver for eq. (E(x)u'(x))' = 0 with boundary conditions u(2) = 0, u'(0)
 + u(0) = 10 using discretization of weak formulation: 
-∀i: ∑ aⱼ[ϕ(vᵢ,vⱼ)-E(0)vᵢ(0)vⱼ(0)]=-10E(0)vᵢ(0) ⟹ B⋅A=L where
-B=[ϕ(vᵢ,vⱼ)-E(0)vᵢ(0)vⱼ(0)]ₙₓₙ , A=[aᵢ]ₙ and L=[-10E(0)vᵢ(0)]ₙ =#
+∀i: ∑ aⱼ[ϕ(vᵢ',vⱼ')-E(0)vᵢ(0)vⱼ(0)]=-10E(0)vᵢ(0) ⟹ B⋅A=L where
+B=[ϕ(vᵢ',vⱼ')-E(0)vᵢ(0)vⱼ(0)]ₙₓₙ , A=[aᵢ]ₙ and L=[-10E(0)vᵢ(0)]ₙ =#
 function solve(n)
     # Input parameters
     a, b = 0, 2

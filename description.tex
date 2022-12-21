@@ -70,13 +70,13 @@ otrzymujemy z (\ref{eq:weak}) układ równań liniowych postaci
 gdzie 
 \begin{equation}
     \begin{split}
-        &b_{ij} = \phi(v_i,v_j)-E(0)v_i(0)v_j(0)\,,\\
+        &b_{ij} = \phi(v_i',v_j')-E(0)v_i(0)v_j(0)\,,\\
         &l_i =-10E(0)v_i(0)
     \end{split}
 \end{equation}
-oraz zdefiniowaliśmy odwzorowanie \(\phi:V_n\times V_n\mapsto\mathbb{R}\) jako
+oraz zdefiniowaliśmy odwzorowanie \(\phi\) jako
 \begin{equation}
-    \phi(v_i,v_j)=\int\limits_{[0;2]}E(x)v_i'v_j'\dd{x}\,.
+    \phi(v_i,v_j)=\int\limits_{[0;2]}E(x)v_iv_j\dd{x}\,.
 \end{equation}
 Wyprowadzony powyżej układ równań został rozwiązany numerycznie przy użyciu
 języka programowania Julia.
