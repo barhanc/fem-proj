@@ -29,6 +29,6 @@ julia> include("solve.jl")
 >> Input number of elements: 0
 >> Press enter to exit...
 
-julia> include("solve.jl")
+julia> IO()
 >> Input number of elements: 100
 ```
