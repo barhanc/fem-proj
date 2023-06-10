@@ -1,4 +1,4 @@
-## Rozwiązanie numeryczne równania różniczkowego przy wykorzystaniu MES | Bartosz Hanc | AGH UST 2022/23
+## Rozwiązanie numeryczne równania różniczkowego przy wykorzystaniu MES
 ### Opis programu
 Repozytorium zawiera plik PDF zawierający sformułowanie danego problemu
 brzegowego wraz z przekształceniem go do postaci słabej oraz jego dyskretyzację
